@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emtex</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #fff;
+      }
+      .logo-container {
+        text-align: center;
+      }
+
+      .logo-text {
+        font-size: 72px;
+        font-weight: bold;
+        color: #000;
+      }
+
+      .reflection {
+        font-size: 72px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.1);
+        transform: scaleY(-1);
+        margin-top: -20px;
+      }
+
+      .slogan {
+        font-size: 18px;
+        font-style: italic;
+        margin-top: 40px;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo-container">
+      <div class="logo-text">Emtex</div>
+      <div class="reflection">Emtex</div>
+      <div class="slogan">"Where Precision Meets Innovation"</div>
+    </div>
+    <script>
+      setTimeout(() => {
+        window.location.href = "../home/home.html"; // Change this to the correct relative path
+      }, 1000);
+    </script>
+  </body>
+</html>

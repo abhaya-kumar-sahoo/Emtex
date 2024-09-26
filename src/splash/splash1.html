@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emtex Design</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        background-color: #0d0f15;
+      }
+
+      video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <video src="../../assets/splash.mp4" autoplay muted preload="auto"></video>
+    <script>
+      setTimeout(() => {
+        window.location.href = "../home/home.html"; // Change this to the correct relative path
+      }, 4000);
+    </script>
+  </body>
+</html>

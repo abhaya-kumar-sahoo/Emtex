@@ -1,0 +1,17 @@
+{
+  "name": "Emtex",
+  "main": "main.js",
+  "version": "1.0.0",
+  "description": "An Electron application",
+  "packageManager": "yarn@3.6.4",
+  "scripts": {
+    "start": "electron .",
+    "dev": "nodemon --exec electron ."
+  },
+  "devDependencies": {
+    "electron": "^32.1.2",
+    "electron-builder": "^25.0.5",
+    "electron-reload": "^2.0.0-alpha.1",
+    "nodemon": "^3.1.7"
+  }
+}

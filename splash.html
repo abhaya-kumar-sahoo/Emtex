@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #0d0f15;
+      }
+      #logo {
+        width: 200px;
+        height: 200px;
+        animation: zoomInOut 3s infinite ease-in-out;
+        margin-top: 10vh;
+      }
+      @keyframes zoomInOut {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img id="logo" src="./assets/icon.png" alt="Loading..." />
+  </body>
+</html>
