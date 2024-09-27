@@ -33,6 +33,7 @@ body {
   width: 150px;
   height: 150px;
   padding-right: 10%;
+
 }
 
 .loading-bar-container {
@@ -42,6 +43,8 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   overflow: hidden;
+  margin-top: 20%;
+  
 }
 
 .loading-bar {
@@ -97,7 +100,7 @@ body {
 
 /* Loading Bar Animation */
 .loading-bar {
-  animation: load 5s ease-in-out forwards;
+  animation: load 3s ease-in-out forwards;
 }
 /* Modal Styling */
 .modal {

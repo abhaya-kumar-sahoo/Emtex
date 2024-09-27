@@ -1,4 +1,4 @@
-const { app, BrowserWindow, screen } = require("electron");
+const { app, BrowserWindow, screen, Menu } = require("electron");
 const path = require("path");
 
 let mainWindow;
@@ -33,10 +33,15 @@ function createMainWindow() {
       nodeIntegration: true,
     },
   });
+  Menu.setApplicationMenu(null);
 
-  mainWindow.loadFile(path.join(__dirname, "src", "splash", "splash1.html"));
+  // Use loadFile to load the splash1.html file
+  mainWindow
+    .loadFile(path.join(__dirname, "src", "splash", "splash1.html"))
+    .catch((err) => {
+      console.error("Failed to load splash1.html:", err);
+    });
 
-  // When main window is ready, close the splash screen and show the main window
   mainWindow.once("ready-to-show", () => {
     if (splash) {
       splash.close();
